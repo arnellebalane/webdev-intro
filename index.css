@@ -72,3 +72,27 @@ footer {
   padding: 80px 12px;
   text-align: center;
 }
+
+@media (max-width: 1200px) {
+  ol {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  ol {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  ol {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 460px) {
+  ol {
+    grid-template-columns: 1fr;
+  }
+}
