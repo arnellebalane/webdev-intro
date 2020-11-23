@@ -7,11 +7,12 @@ const port = process.env.PORT || 3000;
 app.engine('html', handlebars());
 app.set('view engine', 'html');
 app.set('views', './pages');
+app.locals.layout = false;
 
 app.use(express.static('static'));
 
 app.get('/', (req, res) => {
-  res.render('index', { layout: false });
+  res.render('index');
 });
 
 app.listen(port, () => {

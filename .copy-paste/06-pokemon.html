@@ -15,7 +15,9 @@
     </header>
 
     <main>
-      <ol></ol>
+      <h1>{{ pokemon.name }}</h1>
+
+      <img src="{{ pokemon.sprites.other.official-artwork.front_default }}" alt="" />
     </main>
 
     <footer>
@@ -23,9 +25,5 @@
         Copyright &copy; 2020 - Data obtained from <a href="https://pokeapi.co/" target="_blank">pokeapi.co</a>
       </small>
     </footer>
-
-    <script src="/vendor/handlebars.js"></script>
-    <script src="/vendor/jquery.js"></script>
-    <script src="/index.js"></script>
   </body>
 </html>

@@ -1,13 +1,15 @@
 const pokemonTemplate = Handlebars.compile(`
   <li>
-    <img
-      src="{{ sprites.other.official-artwork.front_default }}"
-      alt="{{ name }}"
-      width="475"
-      height="475"
-      loading="lazy"
-    />
-    <h1>{{ name }}</h1>
+    <a href="/pokemon/{{ id }}">
+      <img
+        src="{{ sprites.other.official-artwork.front_default }}"
+        alt="{{ name }}"
+        width="475"
+        height="475"
+        loading="lazy"
+      />
+      <h1>{{ name }}</h1>
+    </a>
   </li>
 `);
 
