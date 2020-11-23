@@ -8,9 +8,9 @@ const port = process.env.PORT || 3000;
 app.engine('html', handlebars());
 app.set('view engine', 'html');
 app.set('views', './pages');
+app.locals.layout = false;
 
 app.use(express.static('static'));
-app.locals.layout = false;
 
 app.get('/', (req, res) => {
   res.render('index');
